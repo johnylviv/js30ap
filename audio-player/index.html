@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аудиоплеер</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="audio-player">
+        <div class="cover">
+            <img src="" alt="Album-cover" id="album-cover">
+        </div>
+        <div class="track-info">
+            <h2 id="track-title">Track Name</h2>
+            <h3 id="track-artist">Track Artist</h3>
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="prev">Back</button>
+            <button id="play-pause">Play</button>
+            <button id="next">Forward</button>
+        </div>
+        <div class="progress">
+            <input type="range" id="progress-bar" value="0" max="100">
+            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="https://github.com/johnylviv">GitHub JohnyLviv</a>
+        <span>© 2024</span>
+        <a href="https://app.rs.school/course/student/dashboard?course=js-fe-preschool-2024q2"><img src="./src/rslogo.svg" alt="Rolling Scopres School"></a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
